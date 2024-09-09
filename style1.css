@@ -1,0 +1,56 @@
+      body{
+        font-family: "Poppins", sans-serif;
+            background-color: #f4f4f4;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+        }
+        .house-card {
+            width: 400px;
+            background-color: #fff;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+            overflow: hidden;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+        .house-card:hover {
+            transform: scale(1.05);
+            box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+            display: block;
+            animation: zoomIn 5s infinite;
+        }
+        @keyframes zoomIn {
+            0% {
+                transform: scale(1);
+            }
+            100% {
+                transform: scale(1.5);
+            }
+        }
+        .house-image img {
+            width: 100%;
+            height: auto;
+        }
+        .house-details {
+            padding: 20px;
+            text-align: center;
+        }
+        .house-details h2 {
+            margin: 0;
+            font-size: 24px;
+            color: #333;
+        }
+        .house-details p {
+            margin: 5px 0;
+            font-size: 18px;
+            color: #666;
+        }
+        .copyright{
+            padding: 20px;
+            text-align: center;
+            color: var(--bg-color);
+            background: var(--main-color);
+        }
+        /*lo
